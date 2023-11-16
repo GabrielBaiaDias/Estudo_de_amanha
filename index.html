@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style_index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200&display=swap" rel="stylesheet">
     <title>LOGIN</title>
 </head>
 
@@ -13,21 +16,21 @@
         <div id="cadastro_form">
             <h1>Cadastro</h1>
             <form action="">
-                <label for="inp_Nome">Nome</label><br />
-                <input type="text" class="input" id="inp_Nome">
-                <div></div>
-                <label for="inp_Sobrenome">Sobrenome</label><br>
-                <input type="text" class="input" id="inp_Sobrenome">
-                <div></div>
-                <label for="inp_Email">E-mail</label><br />
-                <input type="email" class="input" id="inp_Email">
-                <div></div>
-                <label for="inp_Senha">Senha</label><br>
-                <input type="password" class="input" id="inp_Senha"><br>
-                <input type="checkbox" name="" id=""><br>
-                <input type="button" class="botoes" id="btn_login" value="Login">
-                <input type="button" class="botoes" id="btn_continuar" value="Continuar">
-                <input type="button" class="botoes" id="btn_ems" value="Esqueci minha senha">
+                <div id="div_inputs">
+                    <label for="inp_Nome">Nome <span style="color: rgb(55, 55, 55); font-weight: 600;">(completo)</span></label><br />
+                    <input type="text" class="input" id="inp_Nome">
+                    <div></div>
+                    <label for="inp_Email">E-mail</label><br />
+                    <input type="email" class="input" id="inp_Email">
+                    <div></div>
+                    <label for="inp_Senha">Senha</label><br>
+                    <input type="password" class="input" id="inp_Senha"><br>
+                    <input type="checkbox" ><apan style="font-weight: 500;">Mostrar senha</span><br>
+                </div>
+                <span id="btn_login" class="botoes"><a href="#">Login</a></span>
+                <span id="btn_continuar" class="botoes"><a href="Inicio.html">Continuar</a></span>
+                <span id="btn_ems" class="botoes"><a href="#">Esqueci minha senha</a></span>
+
             </form>
         </div>
         <div id="imagem"></div>
@@ -37,3 +40,15 @@
 </body>
 
 </html>
+
+<script>
+
+    var inicio = "inicio.html"
+    var cont = window.document.getElementById("btn_continuar")
+
+    function Inicio() {
+        window.location.href = "/inicio.html";
+    }
+
+
+</script>
