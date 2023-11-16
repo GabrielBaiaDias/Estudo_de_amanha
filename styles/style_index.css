@@ -1,6 +1,14 @@
 * {
+    padding: 0;
+    margin: 0;
     font-family: 'Josefin Sans';
     font-weight: 500;
+}
+
+html {
+    background-image: url(../imagens/13972.jpg);
+    background-size: 500px;
+    background-repeat: repeat;
 }
 
 div#form_imagem {
@@ -30,13 +38,12 @@ div#imagem {
 #cadastro_form {
     width: 40%;
     position: relative;
-    bottom: 20px;
 }
 
 #cadastro_form h1 {
     font-weight: 900;
     font-size: 2.6em;
-    padding: 10px;
+    padding: 15px;
     text-align: center;
 }
 
@@ -58,6 +65,7 @@ form label {
 
 .botoes {
     position: relative;
+    bottom: -45px;
     display: inline-block;
     height: 20px;
     background-color: white;
@@ -65,12 +73,10 @@ form label {
     border: none;
     margin-bottom: 5%;
     text-align: center;
-
 }
 
 #div_inputs {
     position: relative;
-    top: -30px;
 }
 
 span > a {
@@ -100,3 +106,8 @@ input {
     font-weight: 600;
 }
 
+#lll {
+    width: 100vw;
+    height: 100vh;
+    background-color: #f1f1f1eb;
+}
