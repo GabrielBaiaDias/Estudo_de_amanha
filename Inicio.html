@@ -8,6 +8,7 @@
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="imagens/Logomarca-EDA_Icon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200&display=swap" rel="stylesheet">
     <title>Nome</title>
 </head>
@@ -17,11 +18,11 @@
     <header>
         <div id="logomarca"></div>
         <div id="menu">
-            <span><a href="#" class="item_menu">Cursos</a></span><strong>│</strong>
-            <span><a href="#" class="item_menu">Assinatura</a></span><strong>│</strong>
-            <span><a href="#" class="item_menu">Sobre nós</a></span><strong>│</strong>
-            <span><a href="#" class="item_menu">Área exclusiva</a></span><strong>│</strong>
-            <span><a href="#" class="item_menu">Contato</a></span>
+            <a href="#" class="item_menu">Cursos</a><strong>│</strong>
+            <a href="#" class="item_menu">Assinatura</a><strong>│</strong>
+            <a href="#" class="item_menu">Sobre nós</a><strong>│</strong>
+            <a href="#" class="item_menu">Área exclusiva</a><strong>│</strong>
+            <a href="#" class="item_menu">Contato</a>
         </div>
         <div id="perfil_user">
             <img id="perfil_img" src="imagens/download.png">
@@ -49,8 +50,10 @@
         </div>
 
         <div id="aulas_data">
-            <span><h2>Agenda Acadêmica</h2></span>
-        
+            <span>
+                <h2>Agenda Acadêmica</h2>
+            </span>
+
 
             <section class="item-aulas">📖 16/11/2023 <span><svg width="70" height="70" fill="#000000"
                         viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -112,28 +115,28 @@
                             d="M8.752 17.648a1.2 1.2 0 0 1 0-1.696L12.703 12 8.752 8.048a1.2 1.2 0 0 1 1.696-1.696l4.8 4.8a1.2 1.2 0 0 1 0 1.696l-4.8 4.8a1.2 1.2 0 0 1-1.696 0Z"
                             clip-rule="evenodd"></path>
                     </svg></span></section>
-                    <button id="ver_mais-aulas">Ver todos</button>
+            <button id="ver_mais-aulas">Ver todos</button>
         </div>
         <div id="assinatura">
-            <h2>Seja VIP: Assine Agora</h2>
-            <p>Descubra uma nova dimensão de aprendizado com nossa assinatura premium. Tenha acesso exclusivo a
-                professores exepcionais, proporcionando uma jornada educativa personalizada e repleta de benefícios.
-                Desenvolva suas habilidades com mentoria especializade e conteúdo exclusivo. Assine agora e embarque 
-                na rota do conhecimento, moldando um futuro de sucesso e realizações.</p>
-            <span><a href="#">Assine Agora!</a></span>
+            <section>
+                <h2>Aulas exclusivas</h2>
+                <span id="separador"></span>
+                <p>Descubra uma nova dimensão de aprendizado com nossa assinatura premium. Tenha acesso exclusivo a
+                    professores exepcionais, proporcionando uma jornada educativa personalizada e repleta de benefícios.
+                    Desenvolva suas habilidades com mentoria especializade e conteúdo exclusivo. Assine agora e embarque
+                    na rota do conhecimento, moldando um futuro de sucesso e realizações.</p>
+            </section>
+            <div ontouchstart="">
+                <div class="button">
+                    <a href="#">Assine já</a>
+                </div>
+            </div>
         </div>
-
-        <!-- 
-                TOPO
-            SERIES (andamento)
-                MEIO
-            AULAS DATADAS
-            ASSINATURA
-                FIM
-            INFO SOBRE O LOGIN
-         -->
     </section>
     <footer>
+        <span>Criado por <a href="https://github.com/GabrielBaiaDias" 
+            target="_blank">Gabriel Baia</a></span>
+        
         <!--
                 PARCERIAS
             ICONE

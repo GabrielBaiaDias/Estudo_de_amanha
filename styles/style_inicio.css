@@ -7,8 +7,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 
 body {
-    background-color: lightgray;
-    position: relative;
     width: 100%;
     height: 100%;
     background-image: url(../imagens/13972.jpg);
@@ -44,17 +42,6 @@ div#menu {
     display: inline-block;
 }
 
-div#menu span {
-    padding: 15px 0px 33px 0px;
-    position: relative;
-}
-
-div#menu span:hover {
-    border-bottom: 2px solid #ca6f42;
-    transition: .3s;
-    padding-top: -5px;
-}
-
 div#menu strong {
     color: #ca6f42;
 }
@@ -65,6 +52,11 @@ div#menu a {
     color: #ca6f42;
     font-size: 1.4em;
     font-weight: bold;
+    padding: 15px 5px 31px 5px;
+}
+
+div#menu a:hover {
+    border-bottom: 2px solid #ca6f42;
 }
 
 img#perfil_img {
@@ -99,7 +91,6 @@ body > section {
     width: 100%;
     height: 100%;
     padding-top: 15px;
-    padding-bottom: 30px;
     background-color: #f1f1f1eb;
 }
 
@@ -110,7 +101,7 @@ body > section {
     box-sizing: border-box;
     background-color: #fda955;
     opacity: .9;
-    padding-left: 22%;
+    padding-left: 24%;
 }
 
 #barra_serie :nth-child(9){
@@ -128,6 +119,11 @@ div > .btn_series {
     transition: .3s;
     font-weight: 900;
     background-color: transparent;
+}
+
+div > .btn_series:hover {
+    background-color: rgba(198, 99, 49, 0.605);
+    color: #fff;
 }
 
 div > .btn_series:focus {
@@ -201,63 +197,131 @@ div#aulas_data > #ver_mais-aulas {
 }
 
 div#assinatura {
-    width: 40%;
-    height: 250px;
+    width: 100%;
+    height: 600px;
+    background-image: url(../imagens/fundo-laranja-2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
     padding: 20px;
+    box-sizing: border-box;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    border-radius: 25px;
     font-weight: 900;
-    background-color: white;
     margin-top: 50px;
     box-shadow: 0px 5px 5px rgba(128, 128, 128, 0.367);
 }
 
-div#assinatura > h2 {
-    font-family: 'Josefin San', sans-serif;
-    font-size: 2.5em;
-    text-align: center  ;
-    margin-bottom: 20px;
+div#assinatura section {
+    width: 35%;
+    position: relative  ;
+    left: 60%;
+    top: 35%;
 }
 
-div#assinatura > p {
+div#assinatura h2 {
+    font-family: 'Josefin San', sans-serif;
+    font-size: 3em;
+    text-align: center;
+    color: white;
+}
+
+div#assinatura span#separador {
+    display: block;
+    position: relative;
+    left: 45%;
+    transform: translateX(-50%);
+    width: 300px;
+    height: 2.5px;
+    font-family: sans-serif;
+    margin: 20px;
+    background-color: #915100;
+}
+
+div#assinatura p {
     width: 90%;
     text-align: center;
     position: relative;
+    font-size: 1.3em;
     left: 50%;
     transform: translateX(-50%);
-}
-
-div#assinatura > span {
-    width: 400px;
-    height: 70px;
-    position: absolute;
-    box-sizing: border-box;
-    font-weight: bold;
-    border: none;
-    display: flex;
-    align-items: center;
-    justify-content: center ;
-    /* border-radius: 10px; */
-    /* background-color: #ffff65; */
-    border-top: 3px solid #ca6f42;
-    border-bottom: 3px solid #ca6f42;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 20px;
-}
-
-div#assinatura > span > a {
-    text-decoration: none;
-    font-size: 2.1em;
-    font-family: 'Josefin San', sans-serif;
-    color: #ae440e; 
 }
 
 footer {
     width: 100%;
-    height: 300px;
-    background-color: #ca6f42;
-    color: #fda955;
+    height: 80px;
+    background-color: #444444;
 }
+
+footer > span {
+    color: white;
+    font-weight: 900;
+    font-size: 1.5em;
+    position: relative;
+    left: 42%;
+    top: 42%;
+    transform: translate(-50% -50%);
+}
+
+footer a {
+    color: #ca6f42;
+    text-decoration: none;
+}
+
+/* BOTAO ANIMADO */
+
+.button{
+    position:relative;
+    display:inline-block;
+    left: 300px;
+    top: 40px;
+  }
+  
+  .button a{
+    color:white;
+    font-family:Helvetica, sans-serif;
+    font-weight:bold;
+    font-size:36px;
+    text-align: center;
+    text-decoration:none;
+    background-color:#FFA12B;
+    display:block;
+    position:relative;
+    padding:20px 40px;
+    
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    text-shadow: 0px 1px 0px #000;
+    filter: dropshadow(color=#000, offx=0px, offy=1px);
+    
+    -webkit-box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 #915100;
+    -moz-box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 #915100;
+    box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 #915100;
+    
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+  }
+  
+  .button a:active{
+    top:10px;
+    background-color:#F78900;
+    
+    -webkit-box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #915100;
+    -moz-box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3pxpx 0 #915100;
+    box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #915100;
+  }
+  
+  .button:after{
+    content:"";
+    height:100%;
+    width:100%;
+    padding:4px;
+    position: absolute;
+    bottom:-15px;
+    left:-4px;
+    z-index:-1;
+    background-color:#2B1800;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+  }

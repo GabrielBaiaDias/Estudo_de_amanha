@@ -1,0 +1,109 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin Sans';
+}
+
+html {
+    background-image: url(../imagens/13972.jpg);
+    background-size: 500px;
+    background-repeat: repeat;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #f1f1f1eb;
+}
+
+header {
+    width: 100%;
+    height: 70px;
+    padding-top: 20px;
+    background-color: white;
+}
+
+header img {
+    position: absolute;
+    left: 20px;
+    top: 2%;
+}
+
+img#perfil_img {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: 90px;
+}
+
+div#menu {
+    width: 50%;
+    height: 60px;
+    box-sizing: border-box;
+    position: absolute;
+    left: 33%;
+    top: 35px;
+    display: inline-block;
+}
+
+div#menu strong {
+    color: #ca6f42;
+}
+
+div#menu a {
+    text-decoration: none;
+    margin: 15px;
+    color: #ca6f42;
+    font-size: 1.4em;
+    font-weight: bold;
+    padding: 15px 5px 31px 5px;
+}
+
+div#menu a:hover {
+    border-bottom: 2px solid #ca6f42;
+}
+
+div#perfil_user {
+    width: 140px;
+    height: 50px;
+    padding: 8px;
+    font-family: 'Josefin Sans';
+    display: flex;
+    position: relative;
+    top: -10px;
+    left: 88%;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(128, 128, 128, 0.385);
+}
+
+div#perfil_user :nth-child(1) {
+    color: #ca6f42;
+}
+
+div#perfil_user :nth-child(3) {
+    font-size: 10px;
+    color: #bebebe;
+}
+
+section {
+
+}
+
+div#horario {
+    width: 50%;
+    height: auto;
+    padding: 10px;
+    position: relative;
+    background-color: #ffad5b90;
+    margin-top: 30px;
+    margin-left: 30px;
+    border-radius: 20px;
+}
+
+.materia-item {
+    width: 100%;
+    height: 90px;
+    background-color: white;
+}
