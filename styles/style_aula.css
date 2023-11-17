@@ -98,6 +98,7 @@ body section {
     box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
+    margin-top: 50px;
 }
 
 div#horario {
@@ -105,7 +106,7 @@ div#horario {
     height: auto;
     position: relative;
     background-color: #ffad5b90;
-    margin-top: 30px;
+    margin-top: -20px;
     margin-left: 30px;
     border-radius: 20px;
 }
@@ -137,7 +138,7 @@ body section section {
     box-sizing: border-box;
 }
 
-  .materia-completo {
+.materia-completo {
     width: 90%;
     height: auto;
     position: static;
@@ -146,9 +147,9 @@ body section section {
     display: inline-block;
     box-sizing: border-box;
     border-top: 1px solid black;
-  }
+}
 
-  .caixa {
+.caixa {
     width: 100%;
     height: 70px;
     background-color: white;
@@ -159,34 +160,60 @@ body section section {
     padding-left: 40px;
     font-weight: 600;
     user-select: none;
-    cursor: pointer; /* Adicionei cursor pointer para indicar que é clicável */
-    
-  }
+    cursor: pointer;
+    /* Adicionei cursor pointer para indicar que é clicável */
 
-  .caixa .icone {
+}
+
+.caixa .icone {
     color: black;
     width: 50px;
     height: 50px;
     padding-right: 20px;
-    margin-left: auto; /* Move o ícone para a extremidade direita da caixa */
+    margin-left: auto;
+    /* Move o ícone para a extremidade direita da caixa */
     transition: .5s;
-  }
+}
 
-  .rotate {
+.rotate {
     transform: rotate(180deg);
-  }
+}
 
-  .conteudo-fechado {
+.conteudo-fechado {
     display: none;
     transition: 1s;
-  }
+}
 
-  .conteudo-aberto {
+.conteudo-aberto {
     display: block;
     transition: 1s;
     width: 100%;
     height: auto;
     padding: 20px;
+    font-size: 17px;
     box-sizing: border-box;
     background-color: lightgray;
-  }
+}
+
+#trocar {
+    margin-top: 10px;
+    font-size: 1.1em;
+    font-weight: bold;
+
+}
+
+#trocar_t {
+    display: block;
+    width: 100px;
+    padding: 5px;
+    font-size: 1.1em;
+    
+    color: black;
+    background-color: #FFA12B;
+    text-decoration: none;
+    text-align: center;
+}
+
+#trocar_t:hover {
+    background-color: #f39624;
+}

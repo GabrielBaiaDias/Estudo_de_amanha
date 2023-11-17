@@ -15,8 +15,9 @@
 
 <body>
     <header>
-        <a href="https://gabrielbaiadias.github.io/Estudo_de_amanha/Inicio.html"><img src="imagens/logomarca-EDA_completo.png" alt=""></a>
-        
+        <a href="https://gabrielbaiadias.github.io/Estudo_de_amanha/Inicio.html"><img
+                src="imagens/logomarca-EDA_completo.png" alt=""></a>
+
         <div id="menu">
             <a href="#" class="item_menu">Cursos</a><strong>│</strong>
             <a href="#" class="item_menu">Assinatura</a><strong>│</strong>
@@ -31,104 +32,115 @@
                 <p>ID:999-999</p>
             </div>
         </div>
-    </header>
-    <section>
-        <div id="horario">
-            <div class="materia-item">— Matemática <strong>7:00</strong></div>
-            <div class="materia-item">— Física <strong>7:50</strong></div>
-            <div class="materia-item">— TI <strong>8:40</strong></div>
-            <div class="materia-item">— IMT <strong>9:30</strong></div>
-            <div class="materia-item">— História <strong>10:00</strong></div>
-            <div class="materia-item">— CNT <strong>10:50</strong></div>
-        </div>
+        <p id="trocar">Trocar turma</p>
+        <a id="trocar_t" href="#">1002</a>
         <section>
-            <div class="materia-completo" onclick="toggleDiv('conteudoMatematica'); toggleIcon('icone')">
-                <div class="caixa">
-                    Matemática
-                    <box-icon class="icone" name='chevron-down'></box-icon>
-                </div>
-                <div id="conteudoMatematica" class="conteudo-fechado">
-                    <!-- Conteúdo de Matemática aqui... -->
-                    <h3 style="margin-bottom: 20px;">Entendendo as Equações do Primeiro Grau</h3>
-                    <p>
-                        ⠀⠀As equações do primeiro grau, também conhecidas como equações lineares, são fundamentais no
-                        estudo
-                        da
-                        matemática e têm ampla aplicação em diversas áreas. Vamos explorar os principais conceitos dessa
-                        categoria de equações.
-                    </p>
-                    <p>
-                        ⠀⠀Uma equação do primeiro grau é uma expressão matemática que envolve uma incógnita (geralmente
-                        representada por "x") e cujo grau máximo da variável é 1. Sua forma geral é "ax + b = 0", onde
-                        "a" e
-                        "b"
-                        são constantes, e "a" ≠ 0.
-                    </p>
-                    <p>
-                        ⠀⠀Para resolver uma equação do primeiro grau, o objetivo é encontrar o valor da variável que
-                        satisfaz
-                        a
-                        igualdade. As operações permitidas são a adição, subtração, multiplicação e divisão. Ao aplicar
-                        essas
-                        operações de maneira equilibrada em ambos os lados da equação, podemos isolar a incógnita e
-                        determinar
-                        sua solução.
-                    </p>
-                    <p>
-                        ⠀⠀Por exemplo, considere a equação "2x - 3 = 5". Para resolver, adicionamos 3 em ambos os lados
-                        para
-                        obter
-                        "2x = 8", e em seguida, dividimos por 2, resultando em "x = 4". Assim, "x = 4" é a solução dessa
-                        equação.
-                    </p>
-                    <p>
-                        ⠀⠀Essas equações são amplamente utilizadas para modelar situações do mundo real, desde problemas
-                        financeiros até situações envolvendo tempo e distância. Portanto, compreender como resolver
-                        equações
-                        do
-                        primeiro grau é uma habilidade valiosa que se aplica em diversos contextos.
-                    </p>
-                    <p>
-                        ⠀⠀Em resumo, as equações do primeiro grau desempenham um papel crucial no desenvolvimento das
-                        habilidades
-                        matemáticas dos estudantes do Ensino Médio, proporcionando uma base sólida para tópicos mais
-                        avançados e
-                        aplicações práticas.
-                    </p>
-                </div>
+
+            <div id="horario">
+                <div class="materia-item">— Matemática <strong>7:00</strong></div>
+                <div class="materia-item">— Física <strong>7:50</strong></div>
+                <div class="materia-item">— TI <strong>8:40</strong></div>
+                <div class="materia-item">— IMT <strong>9:30</strong></div>
+                <div class="materia-item">— História <strong>10:00</strong></div>
+                <div class="materia-item">— CNT <strong>10:50</strong></div>
             </div>
-            <div class="materia-completo" onclick="toggleDiv('conteudoFisica'); toggleIcon('iconeFisica')">
-                <div class="caixa">
-                    Física
-                    <box-icon class="icone" name='chevron-down'></box-icon>
+            <section>
+                <div class="materia-completo" onclick="toggleDiv('conteudoMatematica'); toggleIcon('icone')">
+                    <div class="caixa">
+                        Matemática
+                        <box-icon class="icone" name='chevron-down'></box-icon>
+                    </div>
+                    <div id="conteudoMatematica" class="conteudo-fechado">
+                        <!-- Conteúdo de Matemática aqui... -->
+                        <h3 style="margin-bottom: 20px;">Entendendo as Equações do Primeiro Grau</h3>
+                        <p>
+                            ⠀⠀As equações do primeiro grau, também conhecidas como equações lineares, são fundamentais
+                            no
+                            estudo
+                            da
+                            matemática e têm ampla aplicação em diversas áreas. Vamos explorar os principais conceitos
+                            dessa
+                            categoria de equações.
+                        </p>
+                        <p>
+                            ⠀⠀Uma equação do primeiro grau é uma expressão matemática que envolve uma incógnita
+                            (geralmente
+                            representada por "x") e cujo grau máximo da variável é 1. Sua forma geral é "ax + b = 0",
+                            onde
+                            "a" e
+                            "b"
+                            são constantes, e "a" ≠ 0.
+                        </p>
+                        <p>
+                            ⠀⠀Para resolver uma equação do primeiro grau, o objetivo é encontrar o valor da variável que
+                            satisfaz
+                            a
+                            igualdade. As operações permitidas são a adição, subtração, multiplicação e divisão. Ao
+                            aplicar
+                            essas
+                            operações de maneira equilibrada em ambos os lados da equação, podemos isolar a incógnita e
+                            determinar
+                            sua solução.
+                        </p>
+                        <p>
+                            ⠀⠀Por exemplo, considere a equação "2x - 3 = 5". Para resolver, adicionamos 3 em ambos os
+                            lados
+                            para
+                            obter
+                            "2x = 8", e em seguida, dividimos por 2, resultando em "x = 4". Assim, "x = 4" é a solução
+                            dessa
+                            equação.
+                        </p>
+                        <p>
+                            ⠀⠀Essas equações são amplamente utilizadas para modelar situações do mundo real, desde
+                            problemas
+                            financeiros até situações envolvendo tempo e distância. Portanto, compreender como resolver
+                            equações
+                            do
+                            primeiro grau é uma habilidade valiosa que se aplica em diversos contextos.
+                        </p>
+                        <p>
+                            ⠀⠀Em resumo, as equações do primeiro grau desempenham um papel crucial no desenvolvimento
+                            das
+                            habilidades
+                            matemáticas dos estudantes do Ensino Médio, proporcionando uma base sólida para tópicos mais
+                            avançados e
+                            aplicações práticas.
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <div class="materia-completo" onclick="toggleDiv('conteudoTI'); toggleIcon('iconeTI')">
-                <div class="caixa">
-                    TI
-                    <box-icon class="icone" name='chevron-down'></box-icon>
+                <div class="materia-completo" onclick="toggleDiv('conteudoFisica'); toggleIcon('iconeFisica')">
+                    <div class="caixa">
+                        Física
+                        <box-icon class="icone" name='chevron-down'></box-icon>
+                    </div>
                 </div>
-            </div>
-            <div class="materia-completo" onclick="toggleDiv('conteudoIMT'); toggleIcon('iconeIMT')">
-                <div class="caixa">
-                    IMT
-                    <box-icon class="icone" name='chevron-down'></box-icon>
+                <div class="materia-completo" onclick="toggleDiv('conteudoTI'); toggleIcon('iconeTI')">
+                    <div class="caixa">
+                        TI
+                        <box-icon class="icone" name='chevron-down'></box-icon>
+                    </div>
                 </div>
-            </div>
-            <div class="materia-completo" onclick="toggleDiv('conteudoHistoria'); toggleIcon('iconeHistoria')">
-                <div class="caixa">
-                    História
-                    <box-icon class="icone" name='chevron-down'></box-icon>
+                <div class="materia-completo" onclick="toggleDiv('conteudoIMT'); toggleIcon('iconeIMT')">
+                    <div class="caixa">
+                        IMT
+                        <box-icon class="icone" name='chevron-down'></box-icon>
+                    </div>
                 </div>
-            </div>
-            <div class="materia-completo" onclick="toggleDiv('conteudoCNT'); toggleIcon('iconeCNT')">
-                <div class="caixa">
-                    CNT
-                    <box-icon class="icone" name='chevron-down'></box-icon>
+                <div class="materia-completo" onclick="toggleDiv('conteudoHistoria'); toggleIcon('iconeHistoria')">
+                    <div class="caixa">
+                        História
+                        <box-icon class="icone" name='chevron-down'></box-icon>
+                    </div>
                 </div>
-            </div>
+                <div class="materia-completo" onclick="toggleDiv('conteudoCNT'); toggleIcon('iconeCNT')">
+                    <div class="caixa">
+                        CNT
+                        <box-icon class="icone" name='chevron-down'></box-icon>
+                    </div>
+                </div>
+            </section>
         </section>
-    </section>
 </body>
 
 </html>
